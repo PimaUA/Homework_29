@@ -54,13 +54,13 @@ public class Client {
     }
 
     public static void main(String[] args) throws IOException {
-        Client client = new Client();
-        client.startConnection("127.0.0.1", 8888);
-        client.sendMessage("test");
-        client.sendMessage("hello");
-        client.sendFile("C:/Users/Sasha/Downloads/file1.txt");
-        client.sendMessage("-exit");
-        client.closeConnection();
+        Client client1 = new Client();
+        client1.startConnection("127.0.0.1", 8888);
+        client1.sendMessage("test");
+        client1.sendMessage("hello");
+        client1.sendFile("C:/Users/Sasha/Downloads/file1.txt");
+        client1.sendMessage("-exit");
+        client1.closeConnection();
 
         Client client2 = new Client();
         client2.startConnection("127.0.0.1", 8888);
